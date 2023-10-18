@@ -24,6 +24,7 @@
     ".config/helix/config.toml".source = helix/config.toml;
     ".config/starship/config.toml".source = starship/config.toml;
     ".config/nushell/env.nu".source = nushell/env.nu;
+    ".config/nushell/config.nu".source = nushell/config.nu;
   };
 
   home.sessionVariables = {
