@@ -9,6 +9,7 @@
   home.packages = with pkgs; [
   	helix
 	starship
+	nushell
   ];
 
   programs.git = {
@@ -18,7 +19,6 @@
 	signing.key = "FFA25D0D7797E537";
 	signing.signByDefault = true;
   };
-
 
   home.file = {
     ".config/helix/config.toml".source = helix/config.toml;
