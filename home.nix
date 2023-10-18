@@ -17,7 +17,7 @@
     # # the Nix store. Activating the configuration will then make '~/.screenrc' a
     # # symlink to the Nix store copy.
     # ".screenrc".source = dotfiles/screenrc;
-    .config/helix/source = dotfiles/helix;
+    ".config/helix/config.toml".source = helix/config.toml;
   };
 
   home.sessionVariables = {
