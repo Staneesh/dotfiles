@@ -22,10 +22,13 @@
 
   home.file = {
     ".config/helix/config.toml".source = helix/config.toml;
+    ".config/starship/config.toml".source = starship/config.toml;
+    ".config/nushell/env.nu".source = nushell/env.nu;
   };
 
   home.sessionVariables = {
     EDITOR = "helix";
+    STARSHIP_CONFIG = "/home/stanisz/.config/starship/config.toml";
   };
 
   # Let Home Manager install and manage itself.
