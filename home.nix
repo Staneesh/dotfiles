@@ -4,19 +4,23 @@
   home.username = "stanisz";
   home.homeDirectory = "/home/stanisz";
 
-  home.stateVersion = "23.05"; # Please read the comment before changing.
+  home.stateVersion = "23.05";
 
-  home.packages = [
-    # pkgs.hello
+  home.packages = with pkgs; [
+  	helix
+	starship
   ];
 
-  # Home Manager is pretty good at managing dotfiles. The primary way to manage
-  # plain files is through 'home.file'.
+  programs.git = {
+	enable = true;
+	userName = "Staneesh";
+	userEmail = "blkreasons@outlook.com";
+	signing.key = "FFA25D0D7797E537";
+	signing.signByDefault = true;
+  };
+
+
   home.file = {
-    # # Building this configuration will create a copy of 'dotfiles/screenrc' in
-    # # the Nix store. Activating the configuration will then make '~/.screenrc' a
-    # # symlink to the Nix store copy.
-    # ".screenrc".source = dotfiles/screenrc;
     ".config/helix/config.toml".source = helix/config.toml;
   };
 
