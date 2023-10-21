@@ -1,0 +1,55 @@
+[flags]
+hide_avg_cpu = false
+dot_marker = true
+rate = 100
+left_legend = false
+current_usage = false
+unnormalized_cpu = false
+group_processes = true
+case_sensitive = false
+whole_word = false
+regex = false
+temperature_type = "celsius"
+default_time_value = 60000
+time_delta = 15000
+hide_time = false
+default_widget_type = "proc"
+default_widget_count = 1
+expanded_on_startup = true
+basic = false
+use_old_network_legend = false
+hide_table_gap = false
+battery = false
+disable_click = false
+color = "gruvbox"
+mem_as_value = false
+tree = false
+show_table_scroll_position = false
+process_command = false
+network_use_binary_prefix = false
+network_use_bytes = false
+network_use_log = false
+disable_advanced_kill = false
+enable_gpu_memory = true
+enable_cache_memory = true
+retention = "2h"
+
+[processes]
+columns = ["PID", "Name", "CPU%", "Mem%", "R/s", "W/s", "T.Read", "T.Write", "User", "State"]
+
+[[row]]
+  ratio=50
+  [[row.child]]
+  type="cpu"
+[[row]]
+    ratio=30
+    [[row.child]]
+      ratio=15
+      type="mem"
+    [[row.child]]
+      ratio=15
+      [[row.child.child]]
+        type="temp"
+[[row]]
+  ratio=20
+  type="proc"

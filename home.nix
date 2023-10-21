@@ -7,9 +7,10 @@
   home.stateVersion = "23.05";
 
   home.packages = with pkgs; [
-  	helix
-	starship
 	nushell
+	starship
+  	helix
+	bottom
   ];
 
   programs.git = {
@@ -21,10 +22,11 @@
   };
 
   home.file = {
-    ".config/helix/config.toml".source = helix/config.toml;
-    ".config/starship/config.toml".source = starship/config.toml;
     ".config/nushell/env.nu".source = nushell/env.nu;
     ".config/nushell/config.nu".source = nushell/config.nu;
+    ".config/starship/config.toml".source = starship/config.toml;
+    ".config/helix/config.toml".source = helix/config.toml;
+    ".config/bottom/config.toml".source = bottom/config.toml;
   };
 
   home.sessionVariables = {
