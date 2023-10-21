@@ -26,7 +26,7 @@
     ".config/nushell/config.nu".source = nushell/config.nu;
     ".config/starship/config.toml".source = starship/config.toml;
     ".config/helix/config.toml".source = helix/config.toml;
-    ".config/bottom/config.toml".source = bottom/config.toml;
+    ".config/bottom/bottom.toml".source = bottom/bottom.toml;
   };
 
   home.sessionVariables = {
