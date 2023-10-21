@@ -1,7 +1,7 @@
 [flags]
 hide_avg_cpu = false
 dot_marker = true
-rate = 100
+rate = 250
 left_legend = false
 current_usage = false
 unnormalized_cpu = false
@@ -15,7 +15,7 @@ time_delta = 15000
 hide_time = false
 default_widget_type = "proc"
 default_widget_count = 1
-expanded_on_startup = true
+expanded_on_startup = false
 basic = false
 use_old_network_legend = false
 hide_table_gap = false
@@ -30,26 +30,28 @@ network_use_binary_prefix = false
 network_use_bytes = false
 network_use_log = false
 disable_advanced_kill = false
-enable_gpu_memory = true
-enable_cache_memory = true
-retention = "2h"
+enable_gpu_memory = false
+enable_cache_memory = false
+retention = "1h"
 
 [processes]
 columns = ["PID", "Name", "CPU%", "Mem%", "R/s", "W/s", "T.Read", "T.Write", "User", "State"]
 
 [[row]]
-  ratio=50
+  ratio=40
   [[row.child]]
   type="cpu"
 [[row]]
     ratio=30
     [[row.child]]
-      ratio=15
+      ratio=4
       type="mem"
     [[row.child]]
-      ratio=15
+      ratio=3
       [[row.child.child]]
         type="temp"
 [[row]]
-  ratio=20
-  type="proc"
+  ratio=30
+  [[row.child]]
+    type="proc"
+    default=true
