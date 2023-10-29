@@ -11,6 +11,7 @@
 	starship
   	helix
 	bottom
+	wget
   ];
 
   programs.git = {
