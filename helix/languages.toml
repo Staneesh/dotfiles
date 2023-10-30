@@ -1,6 +1,13 @@
 [[language]]
 name = "cpp"
-language-server = { command = "clangd", args=[ "--compile-commands-dir=compile_commands_directory" ] }
+language-server = { command = "clangd", args = [
+  "--compile-commands-dir=compile_commands_directory",
+] }
 auto-format = true
 indent = { tab-width = 1, unit = "  " }
 formatter = { command = "clang-format" }
+
+[[language]]
+name = "toml"
+auto-format = true
+formatter = { command = "taplo" }

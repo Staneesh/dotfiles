@@ -3,6 +3,7 @@ theme = "everforest-dark"
 [editor]
 line-number = "relative"
 mouse = false
+gutters = ["diagnostics", "spacer", "diff", "line-numbers"]
 
 [editor.cursor-shape]
 insert = "bar"
