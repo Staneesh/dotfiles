@@ -4,11 +4,53 @@ theme = "everforest-dark"
 line-number = "relative"
 mouse = false
 gutters = ["diagnostics", "spacer", "diff", "line-numbers"]
+auto-completion = true
+auto-format = true
+auto-save = true
+completion-replace = true
+auto-info = true
+bufferline = "always"
+
+[editor.statusline]
+left = ["mode", "version-control", "file-modification-indicator" ]
+center = ["file-name"]
+right = ["diagnostics", "position", "file-encoding", "file-type"]
+separator = "|"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.lsp]
+enable = true
+display-messages = false
+auto-signature-help = true
+display-inlay-hints = true
+display-signature-help-docs = true
+snippets = true
+goto-reference-include-declaration = true
 
 [editor.cursor-shape]
 insert = "bar"
 normal = "block"
 select = "underline"
+
+[editor.file-picker]
+hidden = false      # don't ignore hidden files
+follow-symlinks = true
+deduplicate-links = true
+parents = true
+ignore = false
+git-ignore = true
+git-global = false
+git-exclude = false
+
+[editor.auto-pairs]
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'"' = '"'
+'`' = '`'
+'<' = '>'
 
 [keys.normal]
 esc = ["collapse_selection", "keep_primary_selection"]
