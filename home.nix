@@ -7,15 +7,14 @@
   home.stateVersion = "23.05";
 
   home.packages = with pkgs; [
-  	nushell
-  	starship
-  	helix
-  	bottom
-  	wget
-
-    # C++ development
-    clang
-    clang-tools
+  	nushell      # Shell program
+  	starship     # Command prompt
+  	helix        # Text editor
+  	bottom       # Process and system monitor
+  	wget         # Utility program for downloading web content
+    clang        # C++ compiler
+    clang-tools  # C++ LSP (clangd)
+    taplo        # TOML LSP, linter and formatter
   ];
 
   programs.git = {

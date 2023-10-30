@@ -10,4 +10,4 @@ normal = "block"
 select = "underline"
 
 [keys.normal]
-esc = [ "collapse_selection", "keep_primary_selection" ]
+esc = ["collapse_selection", "keep_primary_selection"]
