@@ -15,6 +15,7 @@
     clang        # C++ compiler
     clang-tools  # C++ LSP (clangd)
     taplo        # TOML LSP, linter and formatter
+    nodePackages.gitmoji-cli  # Interactive git commits with emojis
   ];
 
   programs.git = {
