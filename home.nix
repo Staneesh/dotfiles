@@ -7,19 +7,23 @@
   home.stateVersion = "23.05";
 
   home.packages = with pkgs; [
-	nushell
-	starship
+  	nushell
+  	starship
   	helix
-	bottom
-	wget
+  	bottom
+  	wget
+
+    # C++ development
+    clang
+    clang-tools
   ];
 
   programs.git = {
-	enable = true;
-	userName = "Staneesh";
-	userEmail = "blkreasons@outlook.com";
-	signing.key = "FFA25D0D7797E537";
-	signing.signByDefault = true;
+  	enable = true;
+  	userName = "Staneesh";
+  	userEmail = "blkreasons@outlook.com";
+  	signing.key = "FFA25D0D7797E537";
+  	signing.signByDefault = true;
   };
 
   home.file = {
@@ -27,6 +31,7 @@
     ".config/nushell/config.nu".source = nushell/config.nu;
     ".config/starship/config.toml".source = starship/config.toml;
     ".config/helix/config.toml".source = helix/config.toml;
+    ".config/helix/languages.toml".source = helix/languages.toml;
     ".config/bottom/bottom.toml".source = bottom/bottom.toml;
   };
 
