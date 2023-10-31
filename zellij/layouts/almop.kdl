@@ -26,6 +26,12 @@ layout {
         }
     }
 
+    tab name="anton" cwd="/home/stanisz/programming/anton" {
+        pane {
+            name "nushell"
+        }
+    }
+
     tab name="dotfiles" cwd="/home/stanisz/dotfiles" {
         pane {
             name "nushell"
