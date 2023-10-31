@@ -17,6 +17,7 @@
     taplo        # TOML LSP, linter and formatter
     nodePackages.gitmoji-cli  # Interactive git commits with emojis
     zellij       # Terminal multiplexer
+    python311Packages.gpustat  # A cleaner GPU workload monitor
   ];
 
   programs.git = {
