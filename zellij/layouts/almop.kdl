@@ -10,29 +10,25 @@ layout {
         }
     }
 
-    tab name="almop" split_direction="horizontal" focus=true {
+    tab name="almop" split_direction="horizontal" focus=true cwd="/home/stanisz/programming/almost-philosophy" {
         pane focus=true {
             name "nushell"
-            cwd "~/programming/almost-philosophy" 
         }
         pane {
             name "notebook"
-            cwd "~/programming/almost-philosophy" 
             command "sh"
             args "-c" "~/programming/almost-philosophy/launch_notebook"
         }
         pane {
             name "gpu"
-            cwd "~/programming/almost-philosophy" 
             command "sh"
             args "-c" "~/programming/almost-philosophy/monitor_nvidia"
         }
     }
 
-    tab name="dotfiles" {
+    tab name="dotfiles" cwd="/home/stanisz/dotfiles" {
         pane {
             name "nushell"
-            cwd "~/dotfiles" 
         }
     }
 
