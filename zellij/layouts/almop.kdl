@@ -13,7 +13,7 @@ layout {
     tab name="almop" split_direction="horizontal" focus=true cwd="/home/stanisz/programming/almost-philosophy" {
         pane focus=true {
             name "nushell"
-            cmd "nu"
+            command "nu"
         }
         pane {
             name "notebook"
@@ -30,14 +30,14 @@ layout {
     tab name="dotfiles" cwd="/home/stanisz/dotfiles" {
         pane {
             name "nushell"
-            cmd "nu"
+            command "nu"
         }
     }
 
     tab name="anton" cwd="/home/stanisz/programming/anton" {
         pane {
             name "nushell"
-            cmd "nu"
+            command "nu"
         }
     }
 
