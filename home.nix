@@ -36,6 +36,7 @@
     ".config/helix/languages.toml".source = helix/languages.toml;
     ".config/bottom/bottom.toml".source = bottom/bottom.toml;
     ".config/zellij/config.kdl".source = zellij/config.kdl;
+    ".config/zellij/layouts/almop.kdl".source = zellij/layouts/almop.kdl;
   };
 
   home.sessionVariables = {
