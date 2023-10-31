@@ -16,6 +16,7 @@
     clang-tools  # C++ LSP (clangd)
     taplo        # TOML LSP, linter and formatter
     nodePackages.gitmoji-cli  # Interactive git commits with emojis
+    zellij       # Terminal multiplexer
   ];
 
   programs.git = {
@@ -33,6 +34,7 @@
     ".config/helix/config.toml".source = helix/config.toml;
     ".config/helix/languages.toml".source = helix/languages.toml;
     ".config/bottom/bottom.toml".source = bottom/bottom.toml;
+    ".config/zellij/config.kdl".source = zellij/config.kdl;
   };
 
   home.sessionVariables = {
