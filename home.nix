@@ -6,6 +6,11 @@
 
   home.stateVersion = "23.05";
 
+  nixpkgs.config = {
+    allowUnfree = true;
+    cudaSupport = true;
+  };
+
   home.packages = with pkgs; [
   	nushell      # Shell program
   	starship     # Command prompt
@@ -18,6 +23,8 @@
     nodePackages.gitmoji-cli  # Interactive git commits with emojis
     zellij       # Terminal multiplexer
     python311Packages.gpustat  # A cleaner GPU workload monitor
+    waypipe
+    zoxide       # Smarter `cd` for any major shell
   ];
 
   programs.git = {
