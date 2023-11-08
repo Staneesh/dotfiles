@@ -38,6 +38,7 @@
   home.file = {
     ".config/nushell/env.nu".source = nushell/env.nu;
     ".config/nushell/config.nu".source = nushell/config.nu;
+    ".config/starship/init.nu".source = starship/init.nu;
     ".config/starship/config.toml".source = starship/config.toml;
     ".config/zoxide/init.nu".source = zoxide/init.nu;
     ".config/helix/config.toml".source = helix/config.toml;
@@ -50,6 +51,7 @@
   home.sessionVariables = {
     EDITOR = "helix";
     STARSHIP_CONFIG = "/home/stanisz/.config/starship/config.toml";
+    _ZO_DATA_DIR = "/home/stanisz/.config/zoxide/";
   };
 
   # Let Home Manager install and manage itself.
