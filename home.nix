@@ -27,6 +27,8 @@
     zoxide       # Smarter `cd` for any major shell
     du-dust      # A more intuitive `du` command
     delta        # Better `git diff` tool
+    fd           # A replacement for `find`
+    navi         # Interactive cheat-sheet for the command line
   ];
 
   programs.git = {
@@ -71,6 +73,7 @@
     ".config/bottom/bottom.toml".source = bottom/bottom.toml;
     ".config/zellij/config.kdl".source = zellij/config.kdl;
     ".config/zellij/layouts/almop.kdl".source = zellij/layouts/almop.kdl;
+    ".config/navi/config.yaml".source = navi/config.yaml;
   };
 
   home.sessionVariables = {
