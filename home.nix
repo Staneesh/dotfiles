@@ -39,6 +39,7 @@
     ".config/nushell/env.nu".source = nushell/env.nu;
     ".config/nushell/config.nu".source = nushell/config.nu;
     ".config/starship/config.toml".source = starship/config.toml;
+    ".config/zoxide/init.nu".source = zoxide/init.nu;
     ".config/helix/config.toml".source = helix/config.toml;
     ".config/helix/languages.toml".source = helix/languages.toml;
     ".config/bottom/bottom.toml".source = bottom/bottom.toml;
