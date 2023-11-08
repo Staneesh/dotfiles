@@ -25,6 +25,8 @@
     python311Packages.gpustat  # A cleaner GPU workload monitor
     waypipe
     zoxide       # Smarter `cd` for any major shell
+    du-dust      # A more intuitive `du` command
+    delta        # Better `git diff` tool
   ];
 
   programs.git = {
@@ -33,6 +35,29 @@
   	userEmail = "blkreasons@outlook.com";
   	signing.key = "FFA25D0D7797E537";
   	signing.signByDefault = true;
+    delta = {
+      enable = true;   # Use `delta` package for diffs    
+      options = {
+        features = "decorations side-by-side line-numbers";
+        syntax-theme = "Dracula";
+        navigate = "true";
+        light = "false";
+
+        decorations = {
+          commit-decoration-style = "bold yellow box ul";
+          file-style = "bold yellow ul";
+          file-decoration-style = "none";
+          hunk-header-decoration-style = "cyan box ul";
+        };
+
+        line-numbers = {
+          line-numbers-left-style = "cyan";
+          line-numbers-right-style = "cyan";
+          line-numbers-minus-style = 124;
+          line-numbers-plus-style = 28;
+        };
+      };
+    };
   };
 
   home.file = {
