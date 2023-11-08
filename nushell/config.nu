@@ -541,5 +541,5 @@ let-env config = {
   ]
 }
 
-source ~/.cache/starship/init.nu
-source ~/.config/zoxide/zoxide.nu
+source ~/.config/starship/init.nu
+source ~/.config/zoxide/init.nu
