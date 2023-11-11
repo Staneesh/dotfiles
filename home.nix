@@ -29,6 +29,7 @@
     delta        # Better `git diff` tool
     fd           # A replacement for `find`
     navi         # Interactive cheat-sheet for the command line
+    lsof         # List programs running listening on a port
   ];
 
   programs.git = {
