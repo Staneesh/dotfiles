@@ -301,7 +301,11 @@ let-env config = {
 
   hooks: {
     pre_prompt: [{||
-      null  # replace with source code to run before the prompt is shown
+      if (which direnv | is-empty) {
+        return
+      }
+
+      direnv export json | from json | default {} | load-env
     }]
     pre_execution: [{||
       null  # replace with source code to run before the repl input is run

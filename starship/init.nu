@@ -1,4 +1,5 @@
 let-env STARSHIP_SHELL = "nu"
+let-env STARSHIP_CONFIG = "/home/stanisz/.config/starship/config.toml"
 let-env STARSHIP_SESSION_KEY = (random chars -l 16)
 let-env PROMPT_MULTILINE_INDICATOR = (^/home/stanisz/.nix-profile/bin/starship prompt --continuation)
 

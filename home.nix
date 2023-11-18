@@ -19,7 +19,6 @@
   	wget         # Utility program for downloading web content
     clang        # C++ compiler
     clang-tools  # C++ LSP (clangd)
-    taplo        # TOML LSP, linter and formatter
     nodePackages.gitmoji-cli  # Interactive git commits with emojis
     zellij       # Terminal multiplexer
     python311Packages.gpustat  # A cleaner GPU workload monitor
