@@ -63,6 +63,13 @@
     };
   };
 
+  programs = {
+    direnv = {
+      enable = true;
+      enableNushellIntegration = true;
+    };
+  };
+
   home.file = {
     ".config/nushell/env.nu".source = nushell/env.nu;
     ".config/nushell/config.nu".source = nushell/config.nu;
