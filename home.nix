@@ -29,6 +29,7 @@
     fd           # A replacement for `find`
     navi         # Interactive cheat-sheet for the command line
     gh           # GitHub CLI interface
+    rust-analyzer # LSP for rust language
   ];
 
   programs.git = {
