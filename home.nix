@@ -19,7 +19,7 @@
   	wget         # Utility program for downloading web content
     clang        # C++ compiler
     clang-tools  # C++ LSP (clangd)
-    nodePackages.gitmoji-cli  # Interactive git commits with emojis
+    # gitmoji-cli  # Interactive git commits with emojis - appears broken on 23.11 as of 25.11.23
     zellij       # Terminal multiplexer
     python311Packages.gpustat  # A cleaner GPU workload monitor
     waypipe
