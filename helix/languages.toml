@@ -1,8 +1,11 @@
+[language-server.clangd]
+command = "clangd"
+args = [
+  "--compile-commands-dir=compile_commands_directory"
+]
 [[language]]
 name = "cpp"
-language-server = { command = "clangd", args = [
-  "--compile-commands-dir=compile_commands_directory",
-] }
+language-servers = [ { name = "clangd" } ]
 auto-format = true
 indent = { tab-width = 1, unit = "  " }
 formatter = { command = "clang-format" }

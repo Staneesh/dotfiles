@@ -30,6 +30,7 @@
     navi         # Interactive cheat-sheet for the command line
     gh           # GitHub CLI interface
     rust-analyzer # LSP for rust language
+    gnupg        # GPG 
   ];
 
   programs.git = {
