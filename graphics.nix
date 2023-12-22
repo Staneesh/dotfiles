@@ -30,15 +30,67 @@
       favorite-apps = [
         "firefox.desktop"
         "org.gnome.Nautilus.desktop"
-        "alacritty"
+        "Alacritty.desktop"
         "code.desktop"
         "spotify.desktop"
       ];
     };
 
+    "org/gnome/mutter" = {
+      edge-tiling = true;
+    };
+
+    "org/gnome/desktop/wm/keybindings" = {
+      switch-to-workspace-1 = ["<Alt>1"];
+      switch-to-workspace-2 = ["<Alt>2"];
+      switch-to-workspace-3 = ["<Alt>3"];
+      switch-to-workspace-4 = ["<Alt>4"];
+      move-to-workspace-1 = ["<Shift><Alt>1"];
+      move-to-workspace-2 = ["<Shift><Alt>2"];
+      move-to-workspace-3 = ["<Shift><Alt>3"];
+      move-to-workspace-4 = ["<Shift><Alt>4"];
+    };
+
     "org/gnome/desktop/interface" = {
       color-scheme = "prefer-dark";
       enable-hot-corners = false;
+      show-battery-percentage = true;
+    };
+
+    "org/gnome/desktop/session" = {
+      idle-delay = 0;
+    };
+
+    "org/gnome/desktop/notifications" = {
+      show-in-lock-screen = false;
+    };
+
+    "org/gnome/desktop/peripherals/mouse" = {
+      speed = 0.10;
+      accel-profile = "flat";
+    };
+
+    "org/gnome/settings-daemon/plugins/color" = {
+      night-light-enabled = true;
+    };
+
+    "org/gnome/settings-daemon/plugins/power" = {
+      idle-dim = false;
+      power-saver-profile-on-low-battery = false;
+      power-button-action = "hibernate";
+    };
+
+    "org/gnome/settings-daemon/plugins/media-keys/custom0" = {
+      binding = "<Shift><Alt>Return";
+      command = "alacritty";
+      name = "Launch Alacritty";
+    };
+
+    "org/gnome/settings-daemon/plugins/media-keys" = {
+      search = ["<Alt>p"];
+      custom-keybindings = [ 
+        "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/"
+      ];
     };
   };
 
