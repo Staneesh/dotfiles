@@ -33,6 +33,7 @@
         "org.gnome.Nautilus.desktop"
         "Alacritty.desktop"
         "code.desktop"
+        "signal-desktop.desktop"
         "spotify.desktop"
       ];
     };
