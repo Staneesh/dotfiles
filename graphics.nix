@@ -1,8 +1,6 @@
 { config, pkgs, ... }:
 
 {
-  home.stateVersion = "23.05";
-
   home.packages = with pkgs; [
     firefox
     alacritty
@@ -10,6 +8,18 @@
     freetube
   ];
 
-  # Let Home Manager install and manage itself.
-  programs.home-manager.enable = true;
+  gtk = {
+    enable = true;
+
+    theme = {
+      name = "palenight";
+      package = pkgs.palenight-theme;
+    };
+
+    gtk4.extraConfig = {
+      Settings = ''
+        gtk-application-prefer-dark-theme=1
+      '';
+    };
+  };
 }
