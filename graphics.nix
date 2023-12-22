@@ -6,6 +6,7 @@
     alacritty
     spotify
     freetube
+    signal-desktop
   ];
 
   gtk = {
@@ -49,6 +50,7 @@
       move-to-workspace-2 = ["<Shift><Alt>2"];
       move-to-workspace-3 = ["<Shift><Alt>3"];
       move-to-workspace-4 = ["<Shift><Alt>4"];
+      close = ["<Shift><Alt>c"];
     };
 
     "org/gnome/desktop/interface" = {
