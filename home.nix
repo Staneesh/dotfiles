@@ -30,14 +30,15 @@
     navi         # Interactive cheat-sheet for the command line
     gh           # GitHub CLI interface
     rust-analyzer # LSP for rust language
-    gnupg        # GPG 
+    gnupg1        # GPG 
+    openssl      # Generating cryptographically secure passwords
   ];
 
   programs.git = {
   	enable = true;
   	userName = "Staneesh";
   	userEmail = "blkreasons@outlook.com";
-  	signing.key = "FFA25D0D7797E537";
+  	signing.key = "36E9DA977A14221F";
   	signing.signByDefault = true;
     delta = {
       enable = true;   # Use `delta` package for diffs    
