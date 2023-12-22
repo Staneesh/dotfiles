@@ -30,7 +30,7 @@
       favorite-apps = [
         "firefox.desktop"
         "org.gnome.Nautilus.desktop"
-        "alacritty.desktop"
+        "alacritty"
         "code.desktop"
         "spotify.desktop"
       ];
