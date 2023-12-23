@@ -3,11 +3,26 @@
 {
   home.packages = with pkgs; [
     firefox
-    alacritty
     spotify
     freetube
     signal-desktop
   ];
+
+  programs.alacritty = {
+    enable = true;
+    settings = {
+      font = {
+        size = 18;
+      };
+      window = {
+        decorations = "None";
+        startup_mode = "Fullscreen";
+      };
+      mouse = {
+        hide_when_typing = true;
+      };
+    };
+  };
 
   gtk = {
     enable = true;
