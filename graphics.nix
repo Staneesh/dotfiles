@@ -6,6 +6,9 @@
     spotify
     freetube
     signal-desktop
+    libreoffice-qt
+    hunspell             # For libreoffice
+    hunspellDicts.en_US  # For libreoffice
   ];
 
   programs.alacritty = {
