@@ -1,8 +1,12 @@
+[language-server.marksman]
+command = "marksman"
+
 [language-server.clangd]
 command = "clangd"
 args = [
   "--compile-commands-dir=compile_commands_directory"
 ]
+
 [[language]]
 name = "cpp"
 language-servers = [ { name = "clangd" } ]
@@ -10,3 +14,10 @@ auto-format = true
 indent = { tab-width = 1, unit = "  " }
 formatter = { command = "clang-format" }
 
+[[language]]
+name = "markdown"
+scope = "source.md"
+injection-regex = "md|markdown"
+file-types = ["md", "markdown", "PULLREQ_EDITMSG", "mkd", "mdwn", "mdown", "markdn", "mdtxt", "mdtext", "workbook"]
+language-servers = [ { name = "marksman" } ]
+indent = { tab-width = 2, unit = "  " }

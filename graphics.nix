@@ -9,8 +9,10 @@
     libreoffice-qt
     hunspell             # For libreoffice
     hunspellDicts.en_US  # For libreoffice
+    hunspellDicts.pl_PL  # For libreoffice
     texstudio
     texliveFull
+    vlc
   ];
 
   programs.alacritty = {
