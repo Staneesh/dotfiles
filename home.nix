@@ -32,6 +32,7 @@
     rust-analyzer # LSP for rust language
     gnupg1        # GPG 
     openssl      # Generating cryptographically secure passwords
+    marksman     # LSP for markdown files
   ];
 
   programs.git = {
