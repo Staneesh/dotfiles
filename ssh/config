@@ -1,0 +1,4 @@
+Host anton
+	HostName 100.94.209.50
+	User stanisz
+	IdentityFile ~/.ssh/id_ed25519.1

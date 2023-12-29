@@ -87,6 +87,7 @@
     ".config/zellij/config.kdl".source = zellij/config.kdl;
     ".config/zellij/layouts/almop.kdl".source = zellij/layouts/almop.kdl;
     ".config/navi/config.yaml".source = navi/config.yaml;
+    ".ssh/config".source = ssh/config;
   };
 
   home.sessionVariables = {
