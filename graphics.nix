@@ -13,6 +13,7 @@
     texstudio
     texliveFull
     vlc
+    deluge
   ];
 
   programs.alacritty = {
