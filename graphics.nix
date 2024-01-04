@@ -13,6 +13,7 @@
     texstudio
     texliveFull
     vlc
+    zoom-us
   ];
 
   programs.alacritty = {
