@@ -33,6 +33,7 @@
     gnupg1        # GPG 
     openssl      # Generating cryptographically secure passwords
     marksman     # LSP for markdown files
+    nethack
   ];
 
   programs.git = {
