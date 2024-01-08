@@ -34,6 +34,9 @@
     openssl      # Generating cryptographically secure passwords
     marksman     # LSP for markdown files
     nethack
+    yt-dlp
+    ffmpeg
+    mediainfo
   ];
 
   programs.git = {
