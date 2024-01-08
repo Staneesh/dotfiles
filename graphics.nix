@@ -3,6 +3,7 @@
 {
   home.packages = with pkgs; [
     firefox
+    thunderbird
     spotify
     freetube
     signal-desktop
