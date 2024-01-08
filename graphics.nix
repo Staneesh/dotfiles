@@ -49,7 +49,6 @@
 
   # Use `dconf watch /` to track stateful changes you are doing, then set them here.
   dconf.settings = {
-    # ...
     "org/gnome/shell" = {
       favorite-apps = [
         "firefox.desktop"
@@ -60,6 +59,14 @@
         "signal-desktop.desktop"
         "spotify.desktop"
       ];
+    };
+
+    "org/gnome/shell/app-switcher" = {
+      current-workspace-only = true;
+    };
+
+    "org/gnome/shell/window-switcher" = {
+      current-workspace-only = true;
     };
 
     "org/gnome/mutter" = {
