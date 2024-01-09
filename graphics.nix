@@ -15,6 +15,7 @@
     texliveFull
     vlc
     zoom-us
+    gnome.gnome-boxes
   ];
 
   programs.alacritty = {
