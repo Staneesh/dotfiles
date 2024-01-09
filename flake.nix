@@ -35,7 +35,7 @@
 
         # Specify your home configuration modules here, for example,
         # the path to your home.nix.
-        modules = basic-modules ++ [ ./graphics.nix ];
+        modules = basic-modules ++ [ ./graphics.nix ./borgmatic.nix ];
 
         # Optionally use extraSpecialArgs
         # to pass through arguments to home.nix
