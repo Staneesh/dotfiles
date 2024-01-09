@@ -14,13 +14,17 @@
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
+      basic-modules = [
+        ./home.nix
+        ./scripts.nix
+      ];
     in {
-      homeConfigurations."stanisz" = home-manager.lib.homeManagerConfiguration {
+      homeConfigurations."stanisz@anton" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
 
         # Specify your home configuration modules here, for example,
         # the path to your home.nix.
-        modules = [ ./home.nix ];
+        modules = basic-modules; 
 
         # Optionally use extraSpecialArgs
         # to pass through arguments to home.nix
@@ -31,10 +35,7 @@
 
         # Specify your home configuration modules here, for example,
         # the path to your home.nix.
-        modules = [ 
-          ./home.nix 
-          ./graphics.nix
-        ];
+        modules = basic-modules ++ [ ./graphics.nix ];
 
         # Optionally use extraSpecialArgs
         # to pass through arguments to home.nix

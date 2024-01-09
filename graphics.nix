@@ -72,6 +72,7 @@
 
     "org/gnome/mutter" = {
       edge-tiling = true;
+      center-new-windows = true;
     };
 
     "org/gnome/desktop/wm/keybindings" = {
@@ -84,6 +85,12 @@
       move-to-workspace-3 = ["<Shift><Alt>3"];
       move-to-workspace-4 = ["<Shift><Alt>4"];
       close = ["<Shift><Alt>c"];
+    };
+
+    "org/gnome/desktop/wm/preferences" = {
+      resize-with-right-button = true;
+      mouse-button-modifier = "<Alt>";
+      button-layout = "appmenu:minimize,maximize,close";
     };
 
     "org/gnome/desktop/interface" = {
