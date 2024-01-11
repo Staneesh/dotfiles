@@ -11,7 +11,7 @@
       music = {
         location = {
           sourceDirectories = [ "/home/stanisz/media/music" ];
-          repositories = [ "stanisz@anton:~/backups/public/music" ];
+          repositories = [ "ssh://stanisz@anton:/home/stanisz/backups/public/music" ];
         };
         retention = {
           keepHourly = 1;
