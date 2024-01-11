@@ -7,11 +7,14 @@
   
   programs.borgmatic = {
     enable = true;
+    settings = {
+      
+    };
     backups = {
       music = {
         location = {
           sourceDirectories = [ "/home/stanisz/media/music" ];
-          repositories = [ "ssh://stanisz@anton:/home/stanisz/backups/public/music" ];
+          repositories = [ "ssh://stanisz@anton/home/stanisz/backups/public/music" ];
         };
         retention = {
           keepHourly = 1;
