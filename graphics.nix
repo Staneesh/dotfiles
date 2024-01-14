@@ -121,6 +121,8 @@
       idle-dim = false;
       power-saver-profile-on-low-battery = false;
       power-button-action = "hibernate";
+      sleep-inactive-battery-type = "nothing";
+      sleep-inactive-ac-type = "nothing";
     };
 
     "org/gnome/settings-daemon/plugins/media-keys/custom0" = {
