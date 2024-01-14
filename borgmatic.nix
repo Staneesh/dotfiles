@@ -7,9 +7,6 @@
   
   programs.borgmatic = {
     enable = true;
-    settings = {
-      
-    };
     backups = {
       music = {
         location = {

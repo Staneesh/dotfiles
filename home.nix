@@ -41,6 +41,7 @@
 
   programs.git = {
   	enable = true;
+    lfs.enable = true;
   	userName = "Staneesh";
   	userEmail = "blkreasons@outlook.com";
   	signing.key = "36E9DA977A14221F";
