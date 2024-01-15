@@ -16,6 +16,7 @@
     vlc
     zoom-us
     gnome.gnome-boxes
+    evince # gnome pdf viewer
   ];
 
   programs.alacritty = {
