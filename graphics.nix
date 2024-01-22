@@ -17,6 +17,7 @@
     zoom-us
     gnome.gnome-boxes
     evince # gnome pdf viewer
+    discord
   ];
 
   programs.alacritty = {
