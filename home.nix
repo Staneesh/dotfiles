@@ -38,6 +38,7 @@
     ffmpeg
     mediainfo
     minikube
+    kubectl
   ];
 
   programs.git = {
