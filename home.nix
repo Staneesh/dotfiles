@@ -37,6 +37,7 @@
     yt-dlp
     ffmpeg
     mediainfo
+    minikube
   ];
 
   programs.git = {
