@@ -39,7 +39,6 @@
     mediainfo
     minikube
     kubectl
-    kubelet
   ];
 
   programs.git = {
