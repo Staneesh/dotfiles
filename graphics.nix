@@ -18,6 +18,7 @@
     gnome.gnome-boxes
     evince # gnome pdf viewer
     discord
+    solaar
   ];
 
   programs.alacritty = {
