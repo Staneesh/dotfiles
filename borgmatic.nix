@@ -8,6 +8,33 @@
   programs.borgmatic = {
     enable = true;
     backups = {
+      obsidian = {
+        location = {
+          sourceDirectories = [ "/home/stanisz/obsidian_vaults" ];
+          repositories = [ "ssh://stanisz@anton/home/stanisz/backups/public/obsidian" ];
+        };
+        retention = {
+          keepHourly = 2;
+          keepDaily = 7;
+          keepWeekly = 2;
+          keepMonthly = 2;
+        };
+        consistency.checks = [
+          {
+            name = "repository";
+            frequency = "2 weeks";
+          }
+          {
+            name = "archives";
+            frequency = "2 weeks";
+          }
+          {
+            name = "data";
+            frequency = "2 weeks";
+          }  
+        ];
+      };
+
       music = {
         location = {
           sourceDirectories = [ "/home/stanisz/media/music" ];
