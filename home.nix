@@ -46,8 +46,6 @@
     lfs.enable = true;
   	userName = "Staneesh";
   	userEmail = "blkreasons@outlook.com";
-  	signing.key = "36E9DA977A14221F";
-  	signing.signByDefault = true;
     delta = {
       enable = true;   # Use `delta` package for diffs    
       options = {
